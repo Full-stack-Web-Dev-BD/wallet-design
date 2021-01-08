@@ -8,10 +8,16 @@ const App = () => {
   const [toggle, setToggle] = useState(true)
   const [setBg, setSetBg] = useState(true)
   const [tggleInnerContant, setTggleInnerContant] = useState(true)
+  const [isOpenDropdown, setIsOpenDropdown] = useState(false)
+
   const toggleSwitch = () => {
     const switchButtonContainer = document.getElementById('switch-button-container')
     setSetBg(!setBg)
     setTggleInnerContant(!tggleInnerContant)
+  }
+  const toggleSelect=()=>{
+    alert ('done')
+    setIsOpenDropdown(true)
   }
   return (
     <div>
@@ -37,7 +43,7 @@ const App = () => {
 
 
 
-      <div className="main-page ">
+      <div className="main-page " onClick={()=>{isOpenDropdown ? setIsOpenDropdown(false):console.log('not done ')}}>
         <div className="container">
           <div className="row">
             <div className="col-md-3">
@@ -50,13 +56,92 @@ const App = () => {
               <div className="wallet-card-container">
                 <div className="wallet-card">
                   {/* cart header */}
-                  <div className="wallet-header">
+                  <div className="wallet-header"  onClick={() =>setIsOpenDropdown(!isOpenDropdown)}>
                     <p>
                       <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
                       <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
                       <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
                       <span className="arrow-botton"><i class="fas fa-caret-down"></i> </span>
                     </p>
+                    {
+                      isOpenDropdown ?
+
+                        <div className="wallet-drop-down">
+                          <p>
+                            <div className="row">
+                              <div className="col-9">
+                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              </div>
+                              <div className="col-3">
+                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+
+                              </div>
+                            </div>
+                          </p>
+                          <p>
+                            <div className="row">
+                              <div className="col-9">
+                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              </div>
+                              <div className="col-3">
+                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+
+                              </div>
+                            </div>
+                          </p>
+                          <p>
+                            <div className="row">
+                              <div className="col-9">
+                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              </div>
+                              <div className="col-3">
+                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+
+                              </div>
+                            </div>
+                          </p>
+                          <p>
+                            <div className="row">
+                              <div className="col-9">
+                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              </div>
+                              <div className="col-3">
+                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+
+                              </div>
+                            </div>
+                          </p>
+                          <p>
+                            <div className="row">
+                              <div className="col-9">
+                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              </div>
+                              <div className="col-3">
+                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+
+                              </div>
+                            </div>
+                          </p>
+                          <p>
+                            <div className="row">
+                              <div className="col-9">
+                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              </div>
+                              <div className="col-3">
+                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+
+                              </div>
+                            </div>
+                          </p>
+                        </div>
+                        : ''
+                    }
                   </div>
                   {/* card content */}
                   {
@@ -206,20 +291,20 @@ const App = () => {
                 <button className="btn" data-toggle="modal" data-target="#exampleModalCenter">
                   <i class="fas fa-wallet"></i><span>Connect Wallet</span>
                 </button>
-                
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="connect-card">
-                            <div class="connection-container">
-                                <button className="btn connection-text" >
-                                    <i class="fas fa-wallet"></i><span>Connect Wallet</span>
-                                </button>
-                            </div>
+                      <div class="connect-card">
+                        <div class="connection-container">
+                          <button className="btn connection-text" >
+                            <img src="/images/mask.png" /> <span>Connect with metamask</span>
+                          </button>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-            </div>
               </div>
             </div>
           </div>

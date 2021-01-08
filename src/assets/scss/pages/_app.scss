@@ -1,11 +1,12 @@
 .main-page {
     margin-top: 5rem;
-    // connect wallet card modal css
-    .connect-card {
-    }
 
     // page css
-
+    .modal-content {
+        -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+        -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+        box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+    }
     .switch-button-container {
         margin: 15px 0;
         width: 100%;
@@ -52,6 +53,7 @@
                 }
             }
             .wallet-header {
+                position: relative;
                 padding: 0;
                 width: 100%;
                 height: 55px;
@@ -87,6 +89,24 @@
                             color: #8b8989;
                         }
                     }
+                }
+                .wallet-drop-down {
+                    position: absolute;
+                    width: 100%;
+                    background: #f5f6f8;
+                    z-index: 999;
+                    top: 100px;
+                    -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+                    -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+                    box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+                    p{
+                        font-size: 14px;
+                        line-height:45px !important;
+                    }
+                    p:hover{
+                        background-color: rgba(241, 241, 241, 0.794);
+                    }
+                    
                 }
             }
             .wallet-box {
@@ -177,9 +197,9 @@
             outline: none;
             cursor: pointer;
             border-radius: 25px;
-            -webkit-box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
-            -moz-box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
-            box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
+            -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+            -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+            box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
 
             span {
                 margin-left: 10px;
@@ -199,14 +219,14 @@
                 color: #fa7f3dda;
                 font-size: 18px;
                 font-weight: 600;
-                background: #F6F7F8;
+                background: #f6f7f8;
                 border: none;
                 outline: none;
                 cursor: pointer;
                 border-radius: 25px;
-                -webkit-box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
-                -moz-box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
-                box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
+                -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+                -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
+                box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
             }
         }
     }
