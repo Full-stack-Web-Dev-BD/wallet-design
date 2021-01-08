@@ -1,5 +1,12 @@
 .main-page {
     margin-top: 5rem;
+    .button-icon{
+        i{
+            color: #f3ba2f;
+            position: relative;
+            top: 2px;
+        }
+    }
 
     // page css
     .modal-content {
@@ -99,14 +106,13 @@
                     -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                     -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                     box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
-                    p{
+                    p {
                         font-size: 14px;
-                        line-height:45px !important;
+                        line-height: 45px !important;
                     }
-                    p:hover{
+                    p:hover {
                         background-color: rgba(241, 241, 241, 0.794);
                     }
-                    
                 }
             }
             .wallet-box {

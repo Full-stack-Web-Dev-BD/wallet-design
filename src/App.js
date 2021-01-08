@@ -15,26 +15,12 @@ const App = () => {
     setSetBg(!setBg)
     setTggleInnerContant(!tggleInnerContant)
   }
-  const toggleSelect=()=>{
-    alert ('done')
+  const toggleSelect = () => {
+    alert('done')
     setIsOpenDropdown(true)
   }
   return (
     <div>
-      {/* <div className="form-group">
-        <label className="toggle-switch">
-          <input className="toggle-switch-check" type="checkbox" />
-          <span aria-hidden="true" className="toggle-switch-bar">
-            <span className="toggle-switch-handle">
-              <span className="button-icon button-icon-on toggle-switch-icon">
-              <i class="far fa-address-book"></i>
-              </span>
-              <span className="button-icon button-icon-off toggle-switch-icon">f
-              </span>
-            </span>
-          </span>
-        </label>
-      </div> */}
 
 
 
@@ -43,7 +29,7 @@ const App = () => {
 
 
 
-      <div className="main-page " onClick={()=>{isOpenDropdown ? setIsOpenDropdown(false):console.log('not done ')}}>
+      <div className="main-page " >
         <div className="container">
           <div className="row">
             <div className="col-md-3">
@@ -56,8 +42,8 @@ const App = () => {
               <div className="wallet-card-container">
                 <div className="wallet-card">
                   {/* cart header */}
-                  <div className="wallet-header"  onClick={() =>setIsOpenDropdown(!isOpenDropdown)}>
-                    <p>
+                  <div className="wallet-header" >
+                    <p onClick={() => setIsOpenDropdown(!isOpenDropdown)}>
                       <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
                       <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
                       <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
@@ -67,14 +53,29 @@ const App = () => {
                       isOpenDropdown ?
 
                         <div className="wallet-drop-down">
+
+
                           <p>
                             <div className="row">
-                              <div className="col-9">
-                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                              <div className="col-8">
                               </div>
-                              <div className="col-3">
-                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+                              {/* custom switch  */}
+                              <div className="col-4 text-right">
+                                <div className="form-group">
+                                  <label className="toggle-switch">
+                                    <input className="toggle-switch-check" type="checkbox" />
+                                    <span aria-hidden="true" className="toggle-switch-bar">
+                                      <span className="toggle-switch-handle">
+                                        <span className="button-icon button-icon-on toggle-switch-icon">
+                                        <i   className="fab fa-bitcoin bit-icon"></i>
+                                        </span>
+                                        <span className="button-icon button-icon-off toggle-switch-icon">
+                                          <i className="fab fa-gg-circle"></i>
+                                        </span>
+                                      </span>
+                                    </span>
+                                  </label>
+                                </div>
 
                               </div>
                             </div>
