@@ -1,13 +1,20 @@
 .main-page {
     margin-top: 5rem;
-    .button-icon{
-        i{
+    .button-icon {
+        i {
             color: #f3ba2f;
             position: relative;
             top: 2px;
         }
     }
-
+    .toggle-switch-handle {
+        img {
+            width: 27px;
+            border-radius: 100%;
+            position: relative;
+            bottom: 1px;
+        }
+    }
     // page css
     .modal-content {
         -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
@@ -17,13 +24,13 @@
     .switch-button-container {
         margin: 15px 0;
         width: 100%;
-        height: 45px;
+        height: 80px;
         color: #000;
         font-size: 18px;
         font-weight: 600;
         background: #f6f7f8;
         cursor: pointer;
-        border-radius: 25px;
+        border-radius: 250px;
         -webkit-box-shadow: inset 48px 51px 13px -51px rgba(181, 181, 181, 1);
         -moz-box-shadow: inset 48px 51px 13px -51px rgba(181, 181, 181, 1);
         box-shadow: inset 48px 51px 13px -51px rgba(181, 181, 181, 1);
@@ -63,12 +70,12 @@
                 position: relative;
                 padding: 0;
                 width: 100%;
-                height: 55px;
+                height: 90px;
                 font-size: 18px;
                 font-weight: 600;
                 background: #f6f7f8;
                 cursor: pointer;
-                border-radius: 25px;
+                border-radius: 255px;
                 -webkit-box-shadow: inset 48px 51px 13px -51px rgba(181, 181, 181, 1);
                 -moz-box-shadow: inset 48px 51px 13px -51px rgba(181, 181, 181, 1);
                 box-shadow: inset 48px 51px 13px -51px rgba(181, 181, 181, 1);
@@ -76,11 +83,15 @@
                 text-align: center;
                 p {
                     width: 100%;
-                    line-height: 55px;
+                    line-height: 90px;
                     i {
                         font-size: 20px;
                     }
                     .first-icon {
+                        img{
+                            width:28px;
+                            border-radius: 10px;
+                        }
                         margin-right: 20px;
                         color: #fa7f3d;
                     }
@@ -98,17 +109,21 @@
                     }
                 }
                 .wallet-drop-down {
+                    text-align: left;
                     position: absolute;
                     width: 100%;
                     background: #f5f6f8;
                     z-index: 999;
                     top: 100px;
+                    padding-bottom: 130px;
                     -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                     -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                     box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                     p {
+                        padding-left: 20px;
                         font-size: 14px;
                         line-height: 45px !important;
+                        
                     }
                     p:hover {
                         background-color: rgba(241, 241, 241, 0.794);
@@ -193,8 +208,8 @@
     .connect-wallet {
         button {
             margin: 15px 0;
-            width: 250px;
-            height: 60px;
+            width: 300px;
+            height: 80px;
             color: #fa7f3dda;
             font-size: 18px;
             font-weight: 600;
@@ -202,7 +217,7 @@
             border: none;
             outline: none;
             cursor: pointer;
-            border-radius: 25px;
+            border-radius: 295px;
             -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
             -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
             box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
@@ -220,8 +235,8 @@
             padding: 120px 70px;
             button {
                 margin: 15px 0;
-                width: 350px;
-                height: 60px;
+                width: 430px;
+                height: 80px;
                 color: #fa7f3dda;
                 font-size: 18px;
                 font-weight: 600;
@@ -229,7 +244,7 @@
                 border: none;
                 outline: none;
                 cursor: pointer;
-                border-radius: 25px;
+                border-radius: 257px;
                 -webkit-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                 -moz-box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);
                 box-shadow: 14px 8px 21px -15px rgba(0, 0, 0, 0.17);

@@ -10,25 +10,26 @@ const App = () => {
   const [tggleInnerContant, setTggleInnerContant] = useState(true)
   const [isOpenDropdown, setIsOpenDropdown] = useState(false)
 
+
+
+  // optoin 
+  const [firstIcon, setFirstIcon] =  useState('/images/1.png')
+  const [txt, setTxt] = useState('3X BITCOIN UP ( 3XBTCUP)')
   const toggleSwitch = () => {
     const switchButtonContainer = document.getElementById('switch-button-container')
     setSetBg(!setBg)
     setTggleInnerContant(!tggleInnerContant)
   }
   const toggleSelect = () => {
-    alert('done')
     setIsOpenDropdown(true)
+  }
+  const setOption=(v1,v2,v3)=>{
+    setFirstIcon(v1)
+    setTxt(v2)
+    setIsOpenDropdown(!isOpenDropdown)
   }
   return (
     <div>
-
-
-
-
-
-
-
-
       <div className="main-page " >
         <div className="container">
           <div className="row">
@@ -44,33 +45,30 @@ const App = () => {
                   {/* cart header */}
                   <div className="wallet-header" >
                     <p onClick={() => setIsOpenDropdown(!isOpenDropdown)}>
-                      <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                      <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
-                      <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
+                      <span className="first-icon"><img src={firstIcon} /></span>
+                      <span className="txt"> {txt} </span>
+                      <span className="secend-icon"><img src="/images/bull.png" />  </span>
                       <span className="arrow-botton"><i class="fas fa-caret-down"></i> </span>
                     </p>
                     {
                       isOpenDropdown ?
-
                         <div className="wallet-drop-down">
-
-
-                          <p>
+                          <p style={{ margin:'0'}}>
                             <div className="row">
                               <div className="col-8">
                               </div>
                               {/* custom switch  */}
-                              <div className="col-4 text-right">
-                                <div className="form-group">
+                              <div className="col-4 text-center">
+                                <div className="form-group" style={{ marginBottom:'0'}}>
                                   <label className="toggle-switch">
                                     <input className="toggle-switch-check" type="checkbox" />
                                     <span aria-hidden="true" className="toggle-switch-bar">
                                       <span className="toggle-switch-handle">
                                         <span className="button-icon button-icon-on toggle-switch-icon">
-                                        <i   className="fab fa-bitcoin bit-icon"></i>
+                                          <img src="/images/bear.jpg" />
                                         </span>
                                         <span className="button-icon button-icon-off toggle-switch-icon">
-                                          <i className="fab fa-gg-circle"></i>
+                                          <img src="/images/bear.jpg" />
                                         </span>
                                       </span>
                                     </span>
@@ -80,63 +78,58 @@ const App = () => {
                               </div>
                             </div>
                           </p>
-                          <p>
-                            <div className="row">
+                          <p onClick={()=>{setOption('/images/1.png','3X BITCOIN UP ( 3XBTCUP )')}}>
+                            <div className="row" >
                               <div className="col-9">
-                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                                <span className="first-icon"><img src="/images/1.png" /></span>
+                                <span className="txt">3X BITCOIN UP ( 3XBTCUP )</span>
                               </div>
                               <div className="col-3">
-                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
-
+                                <span className="secend-icon"><img src="/images/bull.png" /> </span>
                               </div>
                             </div>
                           </p>
-                          <p>
-                            <div className="row">
+                          <p onClick={()=>{setOption('/images/2.png','3X ETHEREUM UP ( 3XETHUP )')}}>
+                            <div className="row" onClick={()=>{}}>
                               <div className="col-9">
-                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                                <span className="first-icon"><img src="/images/2.png" /></span>
+                                <span className="txt">3X ETHEREUM UP ( 3XETHUP )</span>
                               </div>
                               <div className="col-3">
-                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
-
+                                <span className="secend-icon"><img src="/images/bull.png" /> </span>
                               </div>
                             </div>
                           </p>
-                          <p>
+                          <p onClick={()=>{setOption('/images/3.png','3X CHAINLINK UP ( 3XLINKUP )')}}>
                             <div className="row">
                               <div className="col-9">
-                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                                <span className="first-icon"><img src="/images/3.png" /></span>
+                                <span className="txt">3X CHAINLINK UP ( 3XLINKUP )</span>
                               </div>
                               <div className="col-3">
-                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
-
+                                <span className="secend-icon"><img src="/images/bull.png" /> </span>
                               </div>
                             </div>
                           </p>
-                          <p>
+                          <p onClick={()=>{setOption('/images/4.png','3X UNISWAP UP ( 3XUNIUP )')}}>
                             <div className="row">
                               <div className="col-9">
-                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                                <span className="first-icon"><img src="/images/4.png" /></span>
+                                <span className="txt">3X UNISWAP UP ( 3XUNIUP )</span>
                               </div>
                               <div className="col-3">
-                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
-
+                                <span className="secend-icon"><img src="/images/bull.png" /> </span>
                               </div>
                             </div>
                           </p>
-                          <p>
+                          <p onClick={()=>{setOption('/images/5.png','3X BINANCE COIN UP ( 3XBNBUP ) ')}}>
                             <div className="row">
                               <div className="col-9">
-                                <span className="first-icon"><i class="fab fa-bitcoin"></i></span>
-                                <span className="txt">3X BITCOIN UP ( 3XBTCUP)</span>
+                                <span className="first-icon"><img src="/images/5.png" /></span>
+                                <span className="txt">3X BINANCE COIN UP ( 3XBNBUP ) </span>
                               </div>
                               <div className="col-3">
-                                <span className="secend-icon"><i class="fas fa-hat-cowboy"></i> </span>
-
+                                <span className="secend-icon"><img src="/images/bull.png" /> </span>
                               </div>
                             </div>
                           </p>
@@ -174,7 +167,7 @@ const App = () => {
                                   </div>
                                   <div className="col-md-6 text-right">
                                     <span className="top-text"> Balanch 0.00000</span> <br />
-                                    <span> <i class="fab fa-gg-circle"></i> 3XBTCUP</span>
+                                    <span> <img src="/images/bnb.png" /> 3XBTCUP</span>
                                   </div>
                                 </div>
                               </div>
@@ -187,7 +180,7 @@ const App = () => {
                                     <span >0.000000</span>
                                   </div>
                                   <div className="col-md-6 text-right">
-                                    <span >  <i class="fab fa-gg-circle"></i> BNB</span>
+                                    <span >  <img src="/images/bnb.png" /> BNB</span>
                                   </div>
                                 </div>
                                 <hr />
@@ -212,7 +205,7 @@ const App = () => {
 
                                 <div className="row">
                                   <div className="col-md-12 text-right">
-                                    <span >  <i class="fab fa-gg-circle"></i> BNB</span>
+                                    <span >  <img src="/images/bnb.png" /> BNB</span>
                                   </div>
                                 </div>
                               </div>
@@ -229,7 +222,7 @@ const App = () => {
                             </div>
                             <div className="col-md-6 text-right">
                               <span className="top-text"> Balanch 0.00000</span> <br />
-                              <span> <i class="fab fa-gg-circle"></i> 3XBTCUP</span>
+                              <span> <img src="/images/bnb.png" /> 3XBTCUP</span>
                             </div>
                           </div>
                         </div>
