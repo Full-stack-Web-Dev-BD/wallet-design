@@ -1,5 +1,11 @@
 .main-page {
     margin-top: 5rem;
+    // connect wallet card modal css
+    .connect-card {
+    }
+
+    // page css
+
     .switch-button-container {
         margin: 15px 0;
         width: 100%;
@@ -35,6 +41,7 @@
             -webkit-box-shadow: -8px -7px 31px -11px rgba(133, 133, 133, 0.17);
             -moz-box-shadow: -8px -7px 31px -11px rgba(133, 133, 133, 0.17);
             box-shadow: -8px -7px 31px -11px rgba(133, 133, 133, 0.17);
+
             .wallet-transform {
                 text-align: center;
                 padding: 20px 0;
@@ -115,10 +122,25 @@
                         color: #e94971;
                     }
                 }
+                .wallet-Liquidity {
+                    .wallet-Liquidity-balance {
+                        i {
+                            color: #f3ba2f;
+                        }
+                        background: #fcfcfc;
+                        padding: 20px 15px;
+                        border-radius: 15px;
+                        border: 1px solid #e8e8e88f;
+                        font-size: 16px;
+                        color: gray;
+                        font-weight: 500;
+                    }
+                }
             }
             .wallet-footer {
                 color: #80808096;
                 font-weight: 600;
+                font-weight: 15px;
                 .value {
                     color: #4d4b4b96;
                     font-size: 18px;
@@ -167,6 +189,25 @@
         button:focus {
             color: #3498db;
             box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff73;
+        }
+        .connect-card {
+            padding: 120px 70px;
+            button {
+                margin: 15px 0;
+                width: 350px;
+                height: 60px;
+                color: #fa7f3dda;
+                font-size: 18px;
+                font-weight: 600;
+                background: #F6F7F8;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 25px;
+                -webkit-box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
+                -moz-box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
+                box-shadow: -2px 20px 23px -11px rgba(97, 96, 97, 0.78);
+            }
         }
     }
 }
